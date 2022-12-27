@@ -6,6 +6,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.alura.collections.model.Curso;
+
 public class MainCurso {
 	public static void main(String[] args) {
 		Curso curso1 = new Curso("Php", 40);
@@ -22,9 +24,9 @@ public class MainCurso {
 		System.out.println("impresion tal cual fueron ingresados");
 		System.out.println(cursos.toString());
 		
-		System.out.println("impresion en orden de forma natural");
-		Collections.sort(cursos);
-		System.out.println(cursos);
+		// System.out.println("impresion en orden de forma natural");
+		// Collections.sort(cursos);
+		// System.out.println(cursos);
 		
 		System.out.println("impresion en Orden inverso ------");
 		// Collections.sort(cursos, Collections.reverseOrder());
