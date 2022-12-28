@@ -5,9 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-import com.alura.collections.model.Aula;
 import com.alura.collections.model.Curso;
 
 public class MainCollectionsStreams {
