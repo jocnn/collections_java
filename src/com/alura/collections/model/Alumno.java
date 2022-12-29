@@ -2,9 +2,9 @@ package com.alura.collections.model;
 
 public class Alumno {
 	private String nombre;
-	private int codigo;
+	private String codigo;
 	
-	public Alumno(String nombre, int codigo) {
+	public Alumno(String nombre, String codigo) {
 		this.nombre = nombre;
 		this.codigo = codigo;
 	}
@@ -13,7 +13,7 @@ public class Alumno {
 		return this.nombre;
 	}
 	
-	public int getCodigo() {
+	public String getCodigo() {
 		return this.codigo;
 	}
 
