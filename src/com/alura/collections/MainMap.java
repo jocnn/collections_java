@@ -30,8 +30,12 @@ public class MainMap {
 		// 	System.out.println(alumno.get());
 		// }
 
-		Alumno alumnoMap = curso1.getAlumnoMap().get("003");
-		System.out.println(alumnoMap);
+		// Alumno alumnoMap = curso1.getAlumnoMap().get("003");
+		// System.out.println(alumnoMap);
+
+		curso1.getAlumnoMap().forEach((key, value) -> {
+			System.out.println(value);
+		});
 
 	}
 }
