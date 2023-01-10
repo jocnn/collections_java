@@ -27,5 +27,10 @@ public class Alumno {
 	public int hashCode() {
 		return this.nombre.hashCode();
 	}
+
+	@Override
+    public String toString(){
+        return this.nombre;
+    }
 	
 }

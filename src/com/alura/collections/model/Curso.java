@@ -3,9 +3,11 @@ package com.alura.collections.model;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 //import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Map;
 
 public class Curso{
 	private String nombre;
@@ -13,6 +15,7 @@ public class Curso{
 	private List<Aula> aulaList = new ArrayList<>();
 	private Collection<Alumno> alumnos = new HashSet<>();
 	//private Collection<Alumno> alumnos = new LinkedHashSet<>();
+	private Map<String, Alumno> alumnoMap = new HashMap<>();
 	
 	public Curso(String nombre, int tiempo) {
 		this.nombre = nombre;
@@ -53,6 +56,10 @@ public class Curso{
 		return this.alumnos;
 	}
 	
+	public Map<String,Alumno> getAlumnoMap() {
+		return this.alumnoMap;
+	}
+	
 	@Override
 	public String toString() {
 		return this.getNombre();
@@ -64,6 +71,7 @@ public class Curso{
 	
 	public void addAlumno(Alumno alumno) {
 		this.alumnos.add(alumno);
+		this.alumnoMap.put(alumno.getCodigo(), alumno);
 	}
 	
 	public boolean verificaAlumno(Alumno alumno) {
